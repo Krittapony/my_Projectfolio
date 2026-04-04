@@ -30,7 +30,7 @@
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="#home" class="nav-logo" aria-label="Home">Ment.</a>
+        <a href="#home" class="nav-logo" aria-label="Home">Krittaporn.</a>
         <ul class="nav-links" role="list">
           <li><a href="#home" class="active" aria-current="page">หน้าแรก</a></li>
           <li><a href="#about">เกี่ยวกับฉัน</a></li>
@@ -73,7 +73,7 @@
               <div class="hero-badge-dot"></div>
               พร้อมรับงานใหม่
             </div>
-            <h1 class="hero-name">สวัสดี, ผม Ment 👋</h1>
+            <h1 class="hero-name">สวัสดี, ผม Krittaporn 👋</h1>
             <p class="hero-title">Web Developer & LINE Chatbot Specialist</p>
             <p class="hero-desc">
               สร้างเว็บไซต์และ LINE Chatbot ที่ใช้งานง่าย สวยงาม และตอบโจทย์ธุรกิจของคุณ
@@ -118,7 +118,7 @@
                 <!-- Replace emoji with: <img src="images/profile.jpg" alt=""> -->
                 👨‍💻
               </div>
-              <h3>Krittaporn Tomano </h3>
+              <h3>Krittaporn Tomano</h3>
               <p>Full-Stack Web Developer<br>LINE Chatbot Specialist</p>
             </div>
             <div class="about-card-float">
@@ -147,8 +147,8 @@
               <span class="skill-tag">LINE API</span>
               <span class="skill-tag">Jira API</span>
               <span class="skill-tag">Google Sheets</span>
-              <span class="skill-tag">Google app script</span>
-              <span class="skill-tag">Microsoft automation flow</span>
+              <span class="skill-tag">Google App Script</span>
+              <span class="skill-tag">Microsoft Power Automate</span>
               <span class="skill-tag">Railway</span>
               <span class="skill-tag">Git</span>
               <span class="skill-tag">Excel</span>
@@ -245,7 +245,7 @@
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">Ment.</span>
+        <span class="footer-logo">Krittaporn.</span>
         <p class="footer-copy">© 2026 Krittaporn. All rights reserved.</p>
         <div class="footer-links">
           <a href="https://github.com" class="footer-link" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
@@ -266,15 +266,37 @@
         </div>
         <button class="modal-close" id="modal-close" aria-label="ปิด">✕</button>
       </div>
+
+      <!-- Gallery: รองรับรูปหลายรูป ทุกอัตราส่วน -->
       <div class="modal-gallery">
-        <div class="modal-gallery-main" id="modal-image" aria-label="Project image"></div>
+        <div class="modal-gallery-wrap">
+          <div id="modal-image"></div>
+        </div>
       </div>
+
+      <!-- Gallery navigation controls (shown only when >1 image) -->
+      <div class="modal-gallery-controls" id="modal-gallery-controls" style="display:none;">
+        <button class="modal-nav-btn" id="modal-prev" aria-label="รูปก่อนหน้า">&#8249;</button>
+        <div class="modal-dots" id="modal-dots"></div>
+        <span class="modal-counter" id="modal-counter"></span>
+        <button class="modal-nav-btn" id="modal-next" aria-label="รูปถัดไป">&#8250;</button>
+      </div>
+
       <div class="modal-body">
         <p class="modal-full-desc" id="modal-desc"></p>
         <div class="modal-tags" id="modal-tags"></div>
-        <a href="#" class="btn-modal-link" id="modal-link" target="_blank" rel="noopener noreferrer">
-          🔗 ดูเว็บไซต์จริง
-        </a>
+
+        <!-- Action buttons -->
+        <div class="modal-actions">
+          <!-- ปุ่มดูเว็บไซต์จริง: แสดงเฉพาะเมื่อ showLiveUrl: true ใน data.js -->
+          <a href="#" class="btn-modal-link" id="modal-link" target="_blank" rel="noopener noreferrer" style="display:none;">
+            🔗 ดูเว็บไซต์จริง
+          </a>
+          <!-- ปุ่มติดต่อผม: แสดงเสมอ ลิงก์ไปหน้า contact -->
+          <a href="#contact" class="btn-modal-contact" onclick="closeModal()">
+            ✉️ ติดต่อผม
+          </a>
+        </div>
       </div>
     </div>
   </div>
