@@ -34,6 +34,7 @@
         <ul class="nav-links" role="list">
           <li><a href="#home" class="active" aria-current="page">หน้าแรก</a></li>
           <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#experience">ประสบการณ์</a></li>
           <li><a href="#projects">ผลงาน</a></li>
           <li><a href="#contact">ติดต่อ</a></li>
         </ul>
@@ -50,8 +51,9 @@
   <!-- Mobile Menu -->
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
     <a href="#home"     onclick="closeMobileMenu()">หน้าแรก</a>
-    <a href="#about"    onclick="closeMobileMenu()">เกี่ยวกับฉัน</a>
-    <a href="#projects" onclick="closeMobileMenu()">ผลงาน</a>
+    <a href="#about"      onclick="closeMobileMenu()">เกี่ยวกับฉัน</a>
+    <a href="#experience" onclick="closeMobileMenu()">ประสบการณ์</a>
+    <a href="#projects"   onclick="closeMobileMenu()">ผลงาน</a>
     <a href="#contact"  onclick="closeMobileMenu()">ติดต่อ</a>
   </nav>
 
@@ -115,7 +117,7 @@
             <div class="hero-stats">
               <div class="hero-stat-icon">🚀</div>
               <div>
-                <div class="hero-stat-num">20+</div>
+                <div class="hero-stat-num">7+</div>
                 <div class="hero-stat-label">โปรเจคที่สำเร็จ</div>
               </div>
             </div>
@@ -189,6 +191,94 @@
       </div>
     </section>
 
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" aria-label="ประสบการณ์">
+      <div class="container">
+
+        <div class="exp-header fade-up">
+          <div class="section-label">ประสบการณ์ที่เกี่ยวข้อง</div>
+          <h2 class="section-title">พื้นฐาน <span>QA / Software Testing</span></h2>
+          <p class="exp-subtitle">ประสบการณ์ทดสอบซอฟต์แวร์ในธุรกิจการเงินและประกันภัยระดับองค์กร</p>
+        </div>
+
+        <div class="exp-grid fade-up">
+
+          <!-- UOB -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-icon">🏦</div>
+              <div>
+                <div class="exp-company">UOB</div>
+                <div class="exp-role">QA / Software Tester</div>
+              </div>
+              <div class="exp-badge">ธนาคารต่างชาติ</div>
+            </div>
+            <p class="exp-desc">
+              ทดสอบระบบการเงินและกองทุน มีความรู้โครงสร้าง FundConnext
+              เขียน Test Case และ Raise Jira เป็นภาษาอังกฤษตลอดกระบวนการ
+            </p>
+            <ul class="exp-points">
+              <li>ทดสอบระบบกองทุนและโครงสร้าง FundConnext</li>
+              <li>ทดสอบ API ด้วย Postman</li>
+              <li>เขียน Test Case และ Raise Bug ใน Jira เป็นภาษาอังกฤษ</li>
+            </ul>
+            <div class="exp-tools">
+              <span class="exp-tool-tag">Postman</span>
+              <span class="exp-tool-tag">Jira</span>
+              <span class="exp-tool-tag">FundConnext</span>
+              <span class="exp-tool-tag">Financial Domain</span>
+            </div>
+          </div>
+
+          <!-- Thai Life -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-icon">🛡️</div>
+              <div>
+                <div class="exp-company">Thai Life Insurance</div>
+                <div class="exp-role">QA / Software Tester</div>
+              </div>
+              <div class="exp-badge">ประกันภัยไทย</div>
+            </div>
+            <p class="exp-desc">
+              Core member ในทีม QA ที่ทำหน้าที่สื่อสารหลักกับ Vendor ต่างชาติ (Deloitte)
+              มีความรู้โครงสร้างการประกันภัยหลากหลายรูปแบบ
+            </p>
+            <ul class="exp-points">
+              <li>สื่อสารกับ Vendor ต่างชาติ (Deloitte) เป็นภาษาอังกฤษ</li>
+              <li>วิเคราะห์และตรวจสอบข้อมูลด้วย Advanced Excel</li>
+              <li>เขียน Test Case และ Raise Bug ใน Jira เป็นภาษาอังกฤษ</li>
+              <li>ใช้งาน Ubuntu สำหรับการทดสอบระบบ</li>
+            </ul>
+            <div class="exp-tools">
+              <span class="exp-tool-tag">Ubuntu</span>
+              <span class="exp-tool-tag">Jira</span>
+              <span class="exp-tool-tag">Advanced Excel</span>
+              <span class="exp-tool-tag">Insurance Domain</span>
+              <span class="exp-tool-tag">Business English</span>
+            </div>
+          </div>
+
+        </div><!-- .exp-grid -->
+
+        <!-- QA Skills -->
+        <div class="exp-qa-skills fade-up">
+          <div class="exp-qa-skills-title">QA Skills</div>
+          <div class="skills-grid">
+            <span class="skill-tag">Manual Testing</span>
+            <span class="skill-tag">Test Case Design</span>
+            <span class="skill-tag">Bug Reporting</span>
+            <span class="skill-tag">UAT</span>
+            <span class="skill-tag">Regression Testing</span>
+            <span class="skill-tag">API Testing</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Business English</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- ===================== WORKFLOW ===================== -->
     <section id="workflow" aria-label="กระบวนการทำงาน">
       <div class="container">
@@ -199,11 +289,11 @@
           <p class="flow-subtitle">5 ขั้นตอนชัดเจน โปร่งใส ปรับแก้ได้ตามความเหมาะสม</p>
         </div>
 
-        <div class="flow-chart fade-up">
+        <div class="flow-chart">
           <div class="flow-row">
 
             <!-- ── Step 1: เล็งเห็นความต้องการ ── -->
-            <div class="flow-node fnode-1">
+            <div class="flow-node fnode-1 fade-up">
               <div class="flow-icon-wrap ficon-1">
                 <div class="ficon-ring"></div>
                 <div class="ficon-ring ficon-ring-b"></div>
@@ -221,7 +311,7 @@
             </div>
 
             <!-- ── Step 2: วางแผนโครงสร้าง ── -->
-            <div class="flow-node fnode-2">
+            <div class="flow-node fnode-2 fade-up">
               <div class="flow-icon-wrap ficon-2">
                 <span class="ficon-spin">⚙️</span>
               </div>
@@ -237,7 +327,7 @@
             </div>
 
             <!-- ── Step 3: พัฒนาระบบ (loop target) ── -->
-            <div class="flow-node fnode-3">
+            <div class="flow-node fnode-3 fade-up">
               <div class="flow-icon-wrap ficon-3">
                 <span class="ficon-laptop">💻</span>
                 <span class="ficon-cursor">|</span>
@@ -255,7 +345,7 @@
             </div>
 
             <!-- ── Step 4: ลูกค้าตรวจเช็ค (loop source) ── -->
-            <div class="flow-node fnode-4">
+            <div class="flow-node fnode-4 fade-up">
               <div class="flow-icon-wrap ficon-4">
                 <span class="ficon-scan">🔍</span>
               </div>
@@ -273,7 +363,7 @@
             </div>
 
             <!-- ── Step 5: ส่งมอบงาน ── -->
-            <div class="flow-node fnode-5">
+            <div class="flow-node fnode-5 fade-up">
               <div class="flow-icon-wrap ficon-5">
                 <span class="ficon-float">🚀</span>
                 <span class="ficon-sp ficon-sp1">✦</span>
