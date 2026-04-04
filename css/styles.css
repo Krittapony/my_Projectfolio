@@ -172,7 +172,7 @@ section { padding: 96px 0; }
 .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
 
 /* Thumb: fixed height, centers any aspect-ratio image */
-.project-thumb { height: 220px; overflow: hidden; position: relative; background: var(--bg-light); }
+.project-thumb { height: 350px; overflow: hidden; position: relative; background: var(--bg-light); }
 .project-thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px; transition: transform 0.4s ease; }
 .project-card:hover .project-thumb-placeholder { transform: scale(1.05); }
 .project-thumb-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
@@ -183,7 +183,7 @@ section { padding: 96px 0; }
 .slides-track { width: 100%; height: 100%; }
 .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; display: flex; align-items: center; justify-content: center; background: var(--bg-light); }
 .slide.active { opacity: 1; position: relative; }
-.slide img { width: 100%; height: 220px; object-fit: contain; }
+.slide img { width: 100%; height: 350px; object-fit: contain; }
 
 /* Prev/Next buttons — visible only on hover (desktop) */
 .slide-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.85); color: var(--text-primary); font-size: 20px; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s, background 0.2s, transform 0.2s; border: none; line-height: 1; }

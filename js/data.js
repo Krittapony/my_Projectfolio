@@ -23,15 +23,15 @@
 var projects = [
   {
     id: 1,
-    title: "ระบบจองคิวออนไลน์",
+    title: "ระบบค้นหาและสรุป Ticket Jira ด้วย AI",
     category: "website",
-    description: "ระบบจองคิวออนไลน์สำหรับคลินิกและสปา รองรับการแจ้งเตือนอัตโนมัติและการจัดการตารางนัด",
-    fullDescription: "พัฒนาระบบจองคิวออนไลน์ที่ครบครัน สามารถกำหนดเวลาเปิด-ปิดบริการ จัดการ slot การจอง ส่ง reminder ทาง LINE และ Email อัตโนมัติ พร้อม admin dashboard สำหรับจัดการคิวแบบ real-time รองรับการใช้งานทั้ง Mobile และ Desktop",
-    images: [],
+    description: "ระบบค้นหาและสรุป Ticket ใน Jira ด้วย AI ช่วยให้ทีมพัฒนาสามารถเข้าใจเนื้อหาและสถานะของ Ticket ได้อย่างรวดเร็ว ลดเวลาในการจัดการงานและเพิ่มประสิทธิภาพการทำงาน",
+    fullDescription: "พัฒนาระบบจัดการ Ticket ใน Jira โดยใช้ AI ในการค้นหาและสรุปข้อมูลจาก Ticket ต่างๆ ด้วยภาษาพูด ช่วยให้ทีมพัฒนาสามารถเข้าใจเนื้อหาและสถานะของ Ticket ได้อย่างรวดเร็ว ลดเวลาในการจัดการงานและเพิ่มประสิทธิภาพการทำงาน โดยระบบสามารถเชื่อมต่อกับ Jira API เพื่อดึงข้อมูล Ticket และใช้โมเดล AI ในการวิเคราะห์และสรุปข้อมูลที่สำคัญออกมาแสดงผลในรูปแบบที่เข้าใจง่าย",
+    images: ["images/projects/jira_project_1.jpg", "images/projects/jira_project_2.jpg", "images/projects/jira_project_3.jpg", "images/projects/jira_project_4.jpg"],
     emoji: "🗓️",
     gradient: "linear-gradient(135deg, #667eea, #764ba2)",
-    tags: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
-    showLiveUrl: true,
+    tags: ["HTML", "CSS", "JavaScript", "Jira API", "Claude AI" , "Claude API"],
+    showLiveUrl: false,
     liveUrl: "https://example.com",
     year: "2026"
   },
