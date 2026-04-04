@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] — Web Developer & LINE Chatbot Portfolio</title>
+  <meta name="description" content="Portfolio แสดงผลงานเว็บไซต์และ LINE Chatbot โดย [Your Name]">
+  <meta name="keywords" content="web developer, LINE chatbot, portfolio, Thailand">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="[Your Name] — Portfolio">
+  <meta property="og:description" content="ผลงานเว็บไซต์และ LINE Chatbot">
+  <meta property="og:image" content="images/og-thumbnail.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts: Nunito (EN) + Sarabun (TH) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" aria-label="Home">Ment.</a>
+        <ul class="nav-links" role="list">
+          <li><a href="#home" class="active" aria-current="page">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#projects">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#home"     onclick="closeMobileMenu()">หน้าแรก</a>
+    <a href="#about"    onclick="closeMobileMenu()">เกี่ยวกับฉัน</a>
+    <a href="#projects" onclick="closeMobileMenu()">ผลงาน</a>
+    <a href="#contact"  onclick="closeMobileMenu()">ติดต่อ</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" aria-label="Hero section">
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Text -->
+          <div class="hero-text">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              พร้อมรับงานใหม่
+            </div>
+            <h1 class="hero-name">สวัสดี, ผม Ment 👋</h1>
+            <p class="hero-title">Web Developer & LINE Chatbot Specialist</p>
+            <p class="hero-desc">
+              สร้างเว็บไซต์และ LINE Chatbot ที่ใช้งานง่าย สวยงาม และตอบโจทย์ธุรกิจของคุณ
+              ด้วยประสบการณ์กว่า 3 ปีในการพัฒนาโซลูชันดิจิทัล
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary"><span>🎨</span> ดูผลงาน</a>
+              <a href="#contact"  class="btn-secondary"><span>💬</span> ติดต่อฉัน</a>
+            </div>
+          </div>
+
+          <!-- Photo -->
+          <div class="hero-photo-wrap" aria-hidden="true">
+            <div class="hero-photo-ring">
+              <div class="hero-photo">
+                <!-- Replace emoji with: <img src="images/profile.jpg" alt="Profile photo"> -->
+                👨‍💻
+              </div>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat-icon">🚀</div>
+              <div>
+                <div class="hero-stat-num">20+</div>
+                <div class="hero-stat-label">โปรเจคที่สำเร็จ</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-label="About me">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Visual card -->
+          <div class="about-visual fade-up" aria-hidden="true">
+            <div class="about-card-main">
+              <div class="about-avatar">
+                <!-- Replace emoji with: <img src="images/profile.jpg" alt=""> -->
+                👨‍💻
+              </div>
+              <h3>[Krittaporn Tomano]</h3>
+              <p>Full-Stack Web Developer<br>LINE Chatbot Specialist</p>
+            </div>
+            <div class="about-card-float">
+              <div class="about-card-float-title">Expertise</div>
+              <div class="about-card-float-item"><div class="about-dot blue"></div>เว็บไซต์</div>
+              <div class="about-card-float-item"><div class="about-dot pink"></div>LINE Chatbot</div>
+              <div class="about-card-float-item"><div class="about-dot purple"></div>UX/UI Design</div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-text fade-up">
+            <div class="section-label">เกี่ยวกับฉัน</div>
+            <h2 class="section-title">นักพัฒนาที่ <span>ใส่ใจ</span><br>ทุกรายละเอียด</h2>
+            <p class="about-desc">
+              ผมเป็น Web Developer ที่มีความเชี่ยวชาญด้านการพัฒนาเว็บไซต์และ LINE Chatbot
+              โดยเน้นความสวยงาม ประสิทธิภาพ และประสบการณ์ผู้ใช้ที่ดีเป็นหลัก
+              พร้อมรับงานทั้งโปรเจคขนาดเล็กและขนาดใหญ่ด้วยความตั้งใจและมืออาชีพ
+            </p>
+            <div class="about-skills-title">เทคโนโลยีที่ใช้</div>
+            <div class="skills-grid">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">LINE API</span>
+              <span class="skill-tag">Dialogflow</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">UX/UI Design</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="projects-header">
+          <div class="fade-up">
+            <div class="section-label">ผลงาน</div>
+            <h2 class="section-title">โปรเจคที่ <span>ภาคภูมิใจ</span></h2>
+          </div>
+          <div class="filter-tabs fade-up" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all"     role="tab" aria-selected="true">ทั้งหมด</button>
+            <button class="filter-btn"        data-filter="website" role="tab" aria-selected="false">เว็บไซต์</button>
+            <button class="filter-btn"        data-filter="chatbot" role="tab" aria-selected="false">LINE Chatbot</button>
+          </div>
+        </div>
+        <!-- Cards rendered by main.js / renderProjects() -->
+        <div class="projects-grid" id="projects-grid" role="list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-label="Contact">
+      <div class="contact-inner container">
+
+        <div class="contact-header fade-up">
+          <div class="section-label">ติดต่อ</div>
+          <h2 class="section-title">พร้อมช่วย <span>ธุรกิจของคุณ</span></h2>
+          <p class="contact-subtitle">สนใจให้ทำเว็บไซต์หรือแชทบอท? ติดต่อได้เลย!</p>
+        </div>
+
+        <div class="contact-grid fade-up">
+
+          <!-- Phone -->
+          <a href="tel:0XX-XXX-XXXX" class="contact-card" aria-label="โทร 0XX-XXX-XXXX">
+            <div class="contact-icon" aria-hidden="true">📱</div>
+            <div class="contact-info">
+              <div class="contact-label">เบอร์โทรศัพท์</div>
+              <div class="contact-value">0XX-XXX-XXXX</div>
+            </div>
+            <div class="contact-action-btn" aria-hidden="true">↗</div>
+          </a>
+
+          <!-- LINE ID + Copy -->
+          <div class="contact-card" aria-label="LINE ID: @your-line-id">
+            <div class="contact-icon" aria-hidden="true">💬</div>
+            <div class="contact-info">
+              <div class="contact-label">LINE ID</div>
+              <div class="contact-value">@your-line-id</div>
+            </div>
+            <div class="copy-tooltip">
+              <button class="contact-action-btn" onclick="copyLineId()" aria-label="คัดลอก LINE ID">📋</button>
+              <span class="copied-msg" id="copied-msg" aria-live="polite">คัดลอกแล้ว!</span>
+            </div>
+          </div>
+
+          <!-- LINE QR -->
+          <div class="contact-card" role="button" tabindex="0"
+               onclick="openQR()" onkeypress="if(event.key==='Enter')openQR()"
+               style="cursor:pointer" aria-label="สแกน QR Code LINE">
+            <div class="contact-icon" aria-hidden="true">💚</div>
+            <div class="contact-info">
+              <div class="contact-label">LINE QR Code</div>
+              <div class="contact-value">สแกนเพื่อเพิ่มเพื่อน</div>
+            </div>
+            <div class="contact-action-btn" aria-hidden="true">🔍</div>
+          </div>
+
+          <!-- Email -->
+          <a href="mailto:your@email.com" class="contact-card" aria-label="อีเมล your@email.com">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div class="contact-info">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">your@email.com</div>
+            </div>
+            <div class="contact-action-btn" aria-hidden="true">↗</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Ment.</span>
+        <p class="footer-copy">© 2026 [Your Name]. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com" class="footer-link" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://line.me"    class="footer-link" target="_blank" rel="noopener" aria-label="LINE">LINE</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== PROJECT DETAIL MODAL ===================== -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true"
+       aria-labelledby="modal-title-text" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <span class="project-category-badge" id="modal-badge"></span>
+          <h2 class="modal-title" id="modal-title-text"></h2>
+        </div>
+        <button class="modal-close" id="modal-close" aria-label="ปิด">✕</button>
+      </div>
+      <div class="modal-gallery">
+        <div class="modal-gallery-main" id="modal-image" aria-label="Project image"></div>
+      </div>
+      <div class="modal-body">
+        <p class="modal-full-desc" id="modal-desc"></p>
+        <div class="modal-tags" id="modal-tags"></div>
+        <a href="#" class="btn-modal-link" id="modal-link" target="_blank" rel="noopener noreferrer">
+          🔗 ดูเว็บไซต์จริง
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== QR CODE MODAL ===================== -->
+  <div class="qr-modal-backdrop" id="qr-modal" role="dialog" aria-modal="true" aria-label="LINE QR Code">
+    <div class="qr-modal">
+      <div class="qr-placeholder">
+        <!-- Replace with: <img src="images/line-qr.png" alt="LINE QR Code"> -->
+        📱
+      </div>
+      <p class="qr-label">สแกนเพื่อเพิ่มเพื่อน LINE</p>
+      <p class="qr-id">@your-line-id</p>
+      <button class="btn-qr-close" onclick="closeQR()">ปิด</button>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <!-- data.js must load before main.js -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
