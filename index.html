@@ -59,11 +59,31 @@
 
     <!-- ===================== HERO ===================== -->
     <section id="home" aria-label="Hero section">
-      <div class="hero-shapes" aria-hidden="true">
-        <div class="hero-shape hero-shape-1"></div>
-        <div class="hero-shape hero-shape-2"></div>
-        <div class="hero-shape hero-shape-3"></div>
-      </div>
+      <!-- Parallax background wrapper -->
+      <div class="hero-bg-parallax" aria-hidden="true">
+        <div class="hero-shapes">
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+          <div class="hero-shape hero-shape-3"></div>
+        </div>
+
+        <!-- Wave lines background -->
+        <div class="hero-waves">
+        <!-- Wave 1 — top area, slow -->
+        <svg class="hero-wave hero-wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
+          <path d="M0,60 C90,25 270,95 360,60 C450,25 630,95 720,60 C810,25 990,95 1080,60 C1170,25 1350,95 1440,60 C1530,25 1710,95 1800,60 C1890,25 2070,95 2160,60 C2250,25 2430,95 2520,60 C2610,25 2790,95 2880,60" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+        </svg>
+        <!-- Wave 2 — middle, medium speed, reversed -->
+        <svg class="hero-wave hero-wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
+          <path d="M0,60 C120,38 240,82 360,60 C480,38 600,82 720,60 C840,38 960,82 1080,60 C1200,38 1320,82 1440,60 C1560,38 1680,82 1800,60 C1920,38 2040,82 2160,60 C2280,38 2400,82 2520,60 C2640,38 2760,82 2880,60" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+        </svg>
+        <!-- Wave 3 — lower area, fastest, gentle amplitude -->
+        <svg class="hero-wave hero-wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
+          <path d="M0,60 C180,32 300,88 480,60 C660,32 780,88 960,60 C1140,32 1260,88 1440,60 C1620,32 1740,88 1920,60 C2100,32 2220,88 2400,60 C2580,32 2700,88 2880,60" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+        </svg>
+        </div>
+      </div><!-- end .hero-bg-parallax -->
+
       <div class="container">
         <div class="hero-inner">
 
@@ -103,6 +123,18 @@
 
         </div>
       </div>
+      <!-- Wave: Hero → About (3 layers) -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z" fill="#ffffff" fill-opacity="0.3"/>
+        </svg>
+        <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z" fill="#ffffff" fill-opacity="0.6"/>
+        </svg>
+        <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z" fill="#ffffff"/>
+        </svg>
+      </div>
     </section>
 
     <!-- ===================== ABOUT ===================== -->
@@ -116,7 +148,7 @@
               <div class="about-avatar">
                 <img src="images/Profile.jpg" alt="Krittaporn">
               </div>
-              <h3>Krittaporn Tomano</h3>
+              <h3>Ment Krittaporn</h3>
               <p>Full-Stack Web Developer<br>LINE Chatbot Specialist</p>
             </div>
             <div class="about-card-float">
@@ -157,6 +189,148 @@
       </div>
     </section>
 
+    <!-- ===================== WORKFLOW ===================== -->
+    <section id="workflow" aria-label="กระบวนการทำงาน">
+      <div class="container">
+
+        <div class="flow-header fade-up">
+          <div class="section-label">กระบวนการทำงาน</div>
+          <h2 class="section-title">วิธีที่ฉัน <span>ทำงานร่วมกับคุณ</span></h2>
+          <p class="flow-subtitle">5 ขั้นตอนชัดเจน โปร่งใส ปรับแก้ได้ตามความเหมาะสม</p>
+        </div>
+
+        <div class="flow-chart fade-up">
+          <div class="flow-row">
+
+            <!-- ── Step 1: เล็งเห็นความต้องการ ── -->
+            <div class="flow-node fnode-1">
+              <div class="flow-icon-wrap ficon-1">
+                <div class="ficon-ring"></div>
+                <div class="ficon-ring ficon-ring-b"></div>
+                <span>👁️</span>
+              </div>
+              <div class="flow-badge fbadge-1">01</div>
+              <h3 class="flow-node-title">เล็งเห็น<br>ความต้องการ</h3>
+              <p class="flow-node-desc">รับฟังและวิเคราะห์ความต้องการของคุณให้ชัดเจนก่อนเริ่มทุกอย่าง</p>
+            </div>
+
+            <!-- Arrow 1→2 -->
+            <div class="flow-arrow">
+              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-tip">›</div>
+            </div>
+
+            <!-- ── Step 2: วางแผนโครงสร้าง ── -->
+            <div class="flow-node fnode-2">
+              <div class="flow-icon-wrap ficon-2">
+                <span class="ficon-spin">⚙️</span>
+              </div>
+              <div class="flow-badge fbadge-2">02</div>
+              <h3 class="flow-node-title">วางแผน<br>โครงสร้าง</h3>
+              <p class="flow-node-desc">ออกแบบ wireframe และกำหนด spec ก่อนลงมือพัฒนาจริง</p>
+            </div>
+
+            <!-- Arrow 2→3 -->
+            <div class="flow-arrow">
+              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-tip">›</div>
+            </div>
+
+            <!-- ── Step 3: พัฒนาระบบ (loop target) ── -->
+            <div class="flow-node fnode-3">
+              <div class="flow-icon-wrap ficon-3">
+                <span class="ficon-laptop">💻</span>
+                <span class="ficon-cursor">|</span>
+              </div>
+              <div class="flow-badge fbadge-3">03</div>
+              <h3 class="flow-node-title">พัฒนา<br>ระบบ</h3>
+              <p class="flow-node-desc">เขียนโค้ดและพัฒนาฟีเจอร์ตาม spec ที่วางไว้อย่างครบถ้วน</p>
+              <div class="loop-in-chip">↩ แก้ไขอย่างเหมาะสม</div>
+            </div>
+
+            <!-- Arrow 3→4 -->
+            <div class="flow-arrow">
+              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-tip">›</div>
+            </div>
+
+            <!-- ── Step 4: ลูกค้าตรวจเช็ค (loop source) ── -->
+            <div class="flow-node fnode-4">
+              <div class="flow-icon-wrap ficon-4">
+                <span class="ficon-scan">🔍</span>
+              </div>
+              <div class="flow-badge fbadge-4">04</div>
+              <h3 class="flow-node-title">ลูกค้า<br>ตรวจเช็ค</h3>
+              <p class="flow-node-desc">คุณตรวจสอบผลงานและให้ feedback เพื่อปรับปรุงต่อไป</p>
+              <div class="loop-out-chip">❌ ไม่โอเค</div>
+            </div>
+
+            <!-- Arrow 4→5 (OK path) -->
+            <div class="flow-arrow flow-arrow-ok">
+              <div class="ok-chip">✅ โอเค</div>
+              <div class="farrow-line"><div class="farrow-dot farrow-dot-ok"></div></div>
+              <div class="farrow-tip farrow-tip-ok">›</div>
+            </div>
+
+            <!-- ── Step 5: ส่งมอบงาน ── -->
+            <div class="flow-node fnode-5">
+              <div class="flow-icon-wrap ficon-5">
+                <span class="ficon-float">🚀</span>
+                <span class="ficon-sp ficon-sp1">✦</span>
+                <span class="ficon-sp ficon-sp2">✦</span>
+                <span class="ficon-sp ficon-sp3">✦</span>
+              </div>
+              <div class="flow-badge fbadge-5">05</div>
+              <h3 class="flow-node-title">ส่งมอบงาน</h3>
+              <p class="flow-node-desc">ส่งมอบพร้อมใช้งานทันที พร้อม support หลังการส่งมอบ</p>
+            </div>
+
+            <!-- Mobile-only: decision card after step 4 (hidden on desktop) -->
+            <div class="flow-loop-mobile">
+              <div class="flm-paths">
+                <div class="flm-path flm-path-no">
+                  <div class="flm-path-line"></div>
+                  <div class="flm-path-badge flm-badge-no">❌ ไม่โอเค</div>
+                  <div class="flm-path-desc">แก้ไขอย่างเหมาะสม<br>↩ กลับขั้นตอน 03</div>
+                  <div class="flm-path-line flm-path-line-up"></div>
+                </div>
+                <div class="flm-divider"></div>
+                <div class="flm-path flm-path-ok">
+                  <div class="flm-path-line"></div>
+                  <div class="flm-path-badge flm-badge-ok">✅ โอเค</div>
+                  <div class="flm-path-desc">ดำเนินการต่อ<br>→ ขั้นตอน 05</div>
+                  <div class="flm-path-line"></div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- .flow-row -->
+
+          <!-- Desktop-only: Loop-back arc (step 4 → step 3) -->
+          <div class="flow-loop-arc">
+            <div class="loop-arc-line">
+              <div class="loop-arc-dot"></div>
+            </div>
+            <p class="loop-arc-label">⚠️ ไม่โอเค — แก้ไขอย่างเหมาะสมตามตกลง</p>
+          </div>
+
+        </div><!-- .flow-chart -->
+      </div>
+
+      <!-- Wave: Workflow → Projects (3 layers) -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z" fill="#F8F9FD" fill-opacity="0.3"/>
+        </svg>
+        <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z" fill="#F8F9FD" fill-opacity="0.6"/>
+        </svg>
+        <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z" fill="#F8F9FD"/>
+        </svg>
+      </div>
+    </section>
+
     <!-- ===================== PROJECTS ===================== -->
     <section id="projects" aria-label="Projects">
       <div class="container">
@@ -173,6 +347,33 @@
         </div>
         <!-- Cards rendered by main.js / renderProjects() -->
         <div class="projects-grid" id="projects-grid" role="list"></div>
+      </div>
+      <!-- Wave: Projects → Contact (gradient 3 layers) -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="wg1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z" fill="url(#wg1)" fill-opacity="0.3"/>
+        </svg>
+        <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="wg2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z" fill="url(#wg2)" fill-opacity="0.6"/>
+        </svg>
+        <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="wg3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z" fill="url(#wg3)"/>
+        </svg>
       </div>
     </section>
 
@@ -234,6 +435,18 @@
           </a>
 
         </div>
+      </div>
+      <!-- Wave: Contact → Footer (3 layers) -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z" fill="#1A1A2E" fill-opacity="0.3"/>
+        </svg>
+        <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z" fill="#1A1A2E" fill-opacity="0.6"/>
+        </svg>
+        <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z" fill="#1A1A2E"/>
+        </svg>
       </div>
     </section>
 

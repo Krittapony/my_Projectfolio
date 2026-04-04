@@ -121,6 +121,7 @@ function renderProjects(filter) {
     var bt = p.category === 'website' ? '🌐 เว็บไซต์' : '💬 LINE Chatbot';
 
     el.innerHTML =
+      '<div class="card-shine" aria-hidden="true"></div>' +
       '<div class="project-thumb" id="thumb-' + p.id + '">' +
         // Thumb content built below via buildCardSlideshow or placeholder
       '</div>' +
@@ -155,6 +156,8 @@ function renderProjects(filter) {
     grid.querySelectorAll('.fade-up').forEach(function(el) { el.classList.add('visible'); });
     grid.querySelectorAll('.fade-up:not(.visible)').forEach(function(el) { fadeObserver.observe(el); });
   }, 50);
+
+  initCard3DTilt();
 }
 
 // ─── FILTER TABS ─────────────────────────────────────────────
@@ -391,6 +394,55 @@ var fadeObserver = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
 document.querySelectorAll('.fade-up').forEach(function(el) { fadeObserver.observe(el); });
+
+// ─── PARALLAX: HERO BACKGROUND ───────────────────────────────
+var heroBgParallax = document.querySelector('.hero-bg-parallax');
+var parallaxTicking = false;
+var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!prefersReducedMotion && heroBgParallax) {
+  window.addEventListener('scroll', function() {
+    if (!parallaxTicking) {
+      requestAnimationFrame(function() {
+        heroBgParallax.style.transform = 'translateY(' + (window.scrollY * 0.35) + 'px)';
+        parallaxTicking = false;
+      });
+      parallaxTicking = true;
+    }
+  }, { passive: true });
+}
+
+// ─── 3D CARD TILT ─────────────────────────────────────────────
+function initCard3DTilt() {
+  if (prefersReducedMotion) return;
+  if (window.matchMedia('(pointer: coarse)').matches) return; // skip on mobile/touch
+
+  document.querySelectorAll('.project-card').forEach(function(card) {
+    card.addEventListener('mousemove', function(e) {
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var cx = rect.width / 2;
+      var cy = rect.height / 2;
+      var rx = ((y - cy) / cy) * -6;
+      var ry = ((x - cx) / cx) * 6;
+      card.style.transform = 'perspective(900px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateZ(10px)';
+      var shine = card.querySelector('.card-shine');
+      if (shine) {
+        var px = (x / rect.width) * 100;
+        var py = (y / rect.height) * 100;
+        shine.style.background = 'radial-gradient(circle at ' + px + '% ' + py + '%, rgba(255,255,255,0.2) 0%, transparent 65%)';
+        shine.style.opacity = '1';
+      }
+    });
+
+    card.addEventListener('mouseleave', function() {
+      card.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+      var shine = card.querySelector('.card-shine');
+      if (shine) shine.style.opacity = '0';
+    });
+  });
+}
 
 // ─── INIT ─────────────────────────────────────────────────────
 renderProjects();
