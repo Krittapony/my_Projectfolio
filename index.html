@@ -18,6 +18,9 @@
   <meta property="og:image" content="images/og-thumbnail.jpg">
   <meta property="og:type" content="website">
 
+  <!-- Preload critical images -->
+  <link rel="preload" href="images/line-qr-code.jpg" as="image">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -670,10 +673,11 @@
   <div class="qr-modal-backdrop" id="qr-modal" role="dialog" aria-modal="true" aria-label="LINE QR Code">
     <div class="qr-modal">
       <div class="qr-placeholder">
-        <img src="images/line-qr-code.jpg" alt="LINE QR Code">
+        <img src="images/line-qr-code.jpg" alt="LINE QR Code" loading="eager">
       </div>
       <p class="qr-label">สแกนเพื่อเพิ่มเพื่อน LINE</p>
       <p class="qr-id">menmen@3258</p>
+      <a href="https://line.me/ti/p/~menmen3258" class="btn-line-add" target="_blank" rel="noopener">เพิ่มเพื่อนใน LINE</a>
       <button class="btn-qr-close" onclick="closeQR()">ปิด</button>
     </div>
   </div>
