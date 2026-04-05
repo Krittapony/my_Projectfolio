@@ -570,14 +570,17 @@
           </div>
 
           <!-- Email -->
-          <a href="mailto:Krittaporn.03work@gmail.com" class="contact-card" aria-label="อีเมล Krittaporn.03work@gmail.com">
+          <div class="contact-card" aria-label="อีเมล Krittaporn.03work@gmail.com">
             <div class="contact-icon" aria-hidden="true">✉️</div>
             <div class="contact-info">
               <div class="contact-label">Email</div>
               <div class="contact-value">Krittaporn.03work@gmail.com</div>
             </div>
-            <div class="contact-action-btn" aria-hidden="true">↗</div>
-          </a>
+            <div class="copy-tooltip">
+              <button class="contact-action-btn" onclick="copyEmail()" aria-label="คัดลอก Email">📋</button>
+              <span class="copied-msg" id="copied-email-msg" aria-live="polite">คัดลอกแล้ว!</span>
+            </div>
+          </div>
 
         </div>
       </div>

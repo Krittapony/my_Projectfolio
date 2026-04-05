@@ -322,6 +322,19 @@ function copyLineId() {
     });
   } else { fallbackCopy(lineId); showMsg(); }
 }
+function copyEmail() {
+  var msg = document.getElementById('copied-email-msg');
+  function showMsg() {
+    msg.classList.add('show');
+    setTimeout(function() { msg.classList.remove('show'); }, 2000);
+  }
+  var email = 'Krittaporn.03work@gmail.com';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(email).then(showMsg).catch(function() {
+      fallbackCopy(email); showMsg();
+    });
+  } else { fallbackCopy(email); showMsg(); }
+}
 function fallbackCopy(text) {
   var ta = document.createElement('textarea');
   ta.value = text;
