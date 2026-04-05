@@ -341,6 +341,50 @@ function fallbackCopy(text) {
   document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
 }
 
+// ─── FISH BURST ON PROFILE CLICK ─────────────────────────────
+(function () {
+  var profileEl = document.getElementById('hero-profile-img');
+  if (!profileEl) return;
+  profileEl.style.cursor = 'pointer';
+  var fishTypes = ['🐟', '🐠', '🐡'];
+
+  profileEl.addEventListener('click', function () {
+    var rect = profileEl.getBoundingClientRect();
+    var cx = rect.left + rect.width / 2;
+    var cy = rect.top  + rect.height / 2;
+    for (var i = 0; i < 3; i++) {
+      spawnFish(cx, cy, fishTypes[i], i);
+    }
+  });
+
+  function spawnFish(cx, cy, emoji, idx) {
+    var el = document.createElement('span');
+    el.className = 'fish-emoji';
+    el.textContent = emoji;
+
+    // Spread 3 fish evenly with some randomness
+    var baseAngle = -110 + idx * 70;                          // -110°, -40°, 30°
+    var angle = (baseAngle + (Math.random() * 40 - 20)) * (Math.PI / 180);
+    var dist  = 110 + Math.random() * 80;
+    var dx    = Math.cos(angle) * dist;
+    var dy    = Math.sin(angle) * dist;
+    var dur   = 3.4 + Math.random() * 0.6; //3.4 - 4s
+
+    el.style.left = cx + 'px';
+    el.style.top  = cy + 'px';
+    el.style.marginLeft = '-15px';
+    el.style.marginTop  = '-15px';
+    el.style.setProperty('--fish-x', dx + 'px');
+    el.style.setProperty('--fish-y', dy + 'px');
+    el.style.setProperty('--fish-dur', dur + 's');
+    // Mirror fish heading right so they always "face" swim direction
+    if (dx > 0) el.style.transform = 'scaleX(-1)';
+
+    document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, (dur + 0.15) * 1000);
+  }
+})();
+
 // ─── HAMBURGER MENU ──────────────────────────────────────────
 var hamburger = document.getElementById('hamburger');
 var mobileMenu = document.getElementById('mobile-menu');

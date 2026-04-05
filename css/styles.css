@@ -553,3 +553,38 @@ footer { background: var(--text-primary); padding: 40px 0; }
   .modal-actions { flex-direction: column; }
   .btn-modal-link, .btn-modal-contact { width: 100%; justify-content: center; }
 }
+
+/* ─── WAVE EMOJI (👋) ────────────────────────────────────────── */
+@keyframes wave-hand {
+  0%   { transform: rotate(0deg); }
+  8%   { transform: rotate(14deg); }
+  18%  { transform: rotate(-8deg); }
+  28%  { transform: rotate(14deg); }
+  38%  { transform: rotate(-4deg); }
+  48%  { transform: rotate(10deg); }
+  58%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+.wave-emoji {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-hand 3s ease-in-out infinite;
+}
+
+/* ─── FISH EMOJI (profile click) ────────────────────────────── */
+@keyframes fish-swim {
+  0%   { transform: translate(0, 0) scale(1);                                                          opacity: 1; }
+  25%  { transform: translate(calc(var(--fish-x) * 0.3), calc(var(--fish-y) * 0.3 + 18px)) scale(1.15); opacity: 1; }
+  50%  { transform: translate(calc(var(--fish-x) * 0.58), calc(var(--fish-y) * 0.58 - 12px)) scale(1); opacity: 0.85; }
+  75%  { transform: translate(calc(var(--fish-x) * 0.82), calc(var(--fish-y) * 0.82 + 8px)) scale(0.85); opacity: 0.5; }
+  100% { transform: translate(var(--fish-x), var(--fish-y)) scale(0.5);                               opacity: 0; }
+}
+.fish-emoji {
+  position: fixed;
+  font-size: 42px;
+  pointer-events: none;
+  z-index: 9999;
+  user-select: none;
+  animation: fish-swim var(--fish-dur, 2.2s) ease-out forwards;
+  will-change: transform, opacity;
+}
