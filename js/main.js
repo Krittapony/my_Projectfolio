@@ -117,8 +117,8 @@ function renderProjects(filter) {
     el.style.transitionDelay = (i * 0.08) + 's';
     el.setAttribute('aria-label', 'โปรเจค: ' + p.title);
 
-    var bc = p.category === 'website' ? 'badge-website' : 'badge-chatbot';
-    var bt = p.category === 'website' ? '🌐 เว็บไซต์' : '💬 LINE Chatbot';
+    var bc = p.category === 'website' ? 'badge-website' : p.category === 'chatbot' ? 'badge-chatbot' : 'badge-excel';
+    var bt = p.category === 'website' ? '🌐 เว็บไซต์' : p.category === 'chatbot' ? '💬 LINE Chatbot' : '📝 สูตร Excel';
 
     el.innerHTML =
       '<div class="card-shine" aria-hidden="true"></div>' +
@@ -248,8 +248,8 @@ function openModal(id) {
 
   document.getElementById('modal-title-text').textContent = p.title;
   var badge = document.getElementById('modal-badge');
-  badge.textContent = p.category === 'website' ? '🌐 เว็บไซต์' : '💬 LINE Chatbot';
-  badge.className = 'project-category-badge ' + (p.category === 'website' ? 'badge-website' : 'badge-chatbot');
+  badge.textContent = p.category === 'website' ? '🌐 เว็บไซต์' : p.category === 'chatbot' ? '💬 LINE Chatbot' : '📝 สูตร Excel';
+  badge.className = 'project-category-badge ' + (p.category === 'website' ? 'badge-website' : p.category === 'chatbot' ? 'badge-chatbot' : 'badge-excel');
 
   buildModalGallery(p);
 

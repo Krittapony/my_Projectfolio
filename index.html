@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krittaporn — Web Developer & LINE Chatbot Portfolio</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Krittaporn — Portfolio</title>
   <meta name="description" content="Portfolio แสดงผลงานเว็บไซต์และ LINE Chatbot โดย Krittaporn">
   <meta name="keywords" content="web developer, LINE chatbot, portfolio, Thailand">
 
@@ -14,16 +19,21 @@
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
   <!-- Google Fonts: Nunito (EN) + Sarabun (TH) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <!-- ===================== NAVBAR ===================== -->
@@ -38,7 +48,8 @@
           <li><a href="#projects">ผลงาน</a></li>
           <li><a href="#contact">ติดต่อ</a></li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false"
+          aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -50,11 +61,11 @@
 
   <!-- Mobile Menu -->
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-    <a href="#home"     onclick="closeMobileMenu()">หน้าแรก</a>
-    <a href="#about"      onclick="closeMobileMenu()">เกี่ยวกับฉัน</a>
+    <a href="#home" onclick="closeMobileMenu()">หน้าแรก</a>
+    <a href="#about" onclick="closeMobileMenu()">เกี่ยวกับฉัน</a>
     <a href="#experience" onclick="closeMobileMenu()">ประสบการณ์</a>
-    <a href="#projects"   onclick="closeMobileMenu()">ผลงาน</a>
-    <a href="#contact"  onclick="closeMobileMenu()">ติดต่อ</a>
+    <a href="#projects" onclick="closeMobileMenu()">ผลงาน</a>
+    <a href="#contact" onclick="closeMobileMenu()">ติดต่อ</a>
   </nav>
 
   <main>
@@ -71,18 +82,27 @@
 
         <!-- Wave lines background -->
         <div class="hero-waves">
-        <!-- Wave 1 — top area, slow -->
-        <svg class="hero-wave hero-wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
-          <path d="M0,60 C90,25 270,95 360,60 C450,25 630,95 720,60 C810,25 990,95 1080,60 C1170,25 1350,95 1440,60 C1530,25 1710,95 1800,60 C1890,25 2070,95 2160,60 C2250,25 2430,95 2520,60 C2610,25 2790,95 2880,60" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
-        </svg>
-        <!-- Wave 2 — middle, medium speed, reversed -->
-        <svg class="hero-wave hero-wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
-          <path d="M0,60 C120,38 240,82 360,60 C480,38 600,82 720,60 C840,38 960,82 1080,60 C1200,38 1320,82 1440,60 C1560,38 1680,82 1800,60 C1920,38 2040,82 2160,60 C2280,38 2400,82 2520,60 C2640,38 2760,82 2880,60" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-        </svg>
-        <!-- Wave 3 — lower area, fastest, gentle amplitude -->
-        <svg class="hero-wave hero-wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120" preserveAspectRatio="none">
-          <path d="M0,60 C180,32 300,88 480,60 C660,32 780,88 960,60 C1140,32 1260,88 1440,60 C1620,32 1740,88 1920,60 C2100,32 2220,88 2400,60 C2580,32 2700,88 2880,60" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-        </svg>
+          <!-- Wave 1 — top area, slow -->
+          <svg class="hero-wave hero-wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120"
+            preserveAspectRatio="none">
+            <path
+              d="M0,60 C90,25 270,95 360,60 C450,25 630,95 720,60 C810,25 990,95 1080,60 C1170,25 1350,95 1440,60 C1530,25 1710,95 1800,60 C1890,25 2070,95 2160,60 C2250,25 2430,95 2520,60 C2610,25 2790,95 2880,60"
+              fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" />
+          </svg>
+          <!-- Wave 2 — middle, medium speed, reversed -->
+          <svg class="hero-wave hero-wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120"
+            preserveAspectRatio="none">
+            <path
+              d="M0,60 C120,38 240,82 360,60 C480,38 600,82 720,60 C840,38 960,82 1080,60 C1200,38 1320,82 1440,60 C1560,38 1680,82 1800,60 C1920,38 2040,82 2160,60 C2280,38 2400,82 2520,60 C2640,38 2760,82 2880,60"
+              fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
+          </svg>
+          <!-- Wave 3 — lower area, fastest, gentle amplitude -->
+          <svg class="hero-wave hero-wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 120"
+            preserveAspectRatio="none">
+            <path
+              d="M0,60 C180,32 300,88 480,60 C660,32 780,88 960,60 C1140,32 1260,88 1440,60 C1620,32 1740,88 1920,60 C2100,32 2220,88 2400,60 C2580,32 2700,88 2880,60"
+              fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          </svg>
         </div>
       </div><!-- end .hero-bg-parallax -->
 
@@ -103,7 +123,7 @@
             </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn-primary"><span>🎨</span> ดูผลงาน</a>
-              <a href="#contact"  class="btn-secondary"><span>💬</span> ติดต่อฉัน</a>
+              <a href="#contact" class="btn-secondary"><span>💬</span> ติดต่อฉัน</a>
             </div>
           </div>
 
@@ -128,13 +148,18 @@
       <!-- Wave: Hero → About (3 layers) -->
       <div class="wave-divider" aria-hidden="true">
         <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z" fill="#ffffff" fill-opacity="0.3"/>
+          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z"
+            fill="#ffffff" fill-opacity="0.3" />
         </svg>
         <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z" fill="#ffffff" fill-opacity="0.6"/>
+          <path
+            d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z"
+            fill="#ffffff" fill-opacity="0.6" />
         </svg>
         <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z" fill="#ffffff"/>
+          <path
+            d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z"
+            fill="#ffffff" />
         </svg>
       </div>
     </section>
@@ -155,9 +180,15 @@
             </div>
             <div class="about-card-float">
               <div class="about-card-float-title">Expertise</div>
-              <div class="about-card-float-item"><div class="about-dot blue"></div>เว็บไซต์</div>
-              <div class="about-card-float-item"><div class="about-dot pink"></div>LINE Chatbot</div>
-              <div class="about-card-float-item"><div class="about-dot purple"></div>UX/UI Design</div>
+              <div class="about-card-float-item">
+                <div class="about-dot blue"></div>เว็บไซต์
+              </div>
+              <div class="about-card-float-item">
+                <div class="about-dot pink"></div>LINE Chatbot
+              </div>
+              <div class="about-card-float-item">
+                <div class="about-dot purple"></div>UX/UI Design
+              </div>
             </div>
           </div>
 
@@ -306,7 +337,9 @@
 
             <!-- Arrow 1→2 -->
             <div class="flow-arrow">
-              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-line">
+                <div class="farrow-dot"></div>
+              </div>
               <div class="farrow-tip">›</div>
             </div>
 
@@ -322,7 +355,9 @@
 
             <!-- Arrow 2→3 -->
             <div class="flow-arrow">
-              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-line">
+                <div class="farrow-dot"></div>
+              </div>
               <div class="farrow-tip">›</div>
             </div>
 
@@ -340,7 +375,9 @@
 
             <!-- Arrow 3→4 -->
             <div class="flow-arrow">
-              <div class="farrow-line"><div class="farrow-dot"></div></div>
+              <div class="farrow-line">
+                <div class="farrow-dot"></div>
+              </div>
               <div class="farrow-tip">›</div>
             </div>
 
@@ -358,7 +395,9 @@
             <!-- Arrow 4→5 (OK path) -->
             <div class="flow-arrow flow-arrow-ok">
               <div class="ok-chip">✅ โอเค</div>
-              <div class="farrow-line"><div class="farrow-dot farrow-dot-ok"></div></div>
+              <div class="farrow-line">
+                <div class="farrow-dot farrow-dot-ok"></div>
+              </div>
               <div class="farrow-tip farrow-tip-ok">›</div>
             </div>
 
@@ -410,13 +449,18 @@
       <!-- Wave: Workflow → Projects (3 layers) -->
       <div class="wave-divider" aria-hidden="true">
         <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z" fill="#F8F9FD" fill-opacity="0.3"/>
+          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z"
+            fill="#F8F9FD" fill-opacity="0.3" />
         </svg>
         <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z" fill="#F8F9FD" fill-opacity="0.6"/>
+          <path
+            d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z"
+            fill="#F8F9FD" fill-opacity="0.6" />
         </svg>
         <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z" fill="#F8F9FD"/>
+          <path
+            d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z"
+            fill="#F8F9FD" />
         </svg>
       </div>
     </section>
@@ -430,9 +474,10 @@
             <h2 class="section-title">โปรเจคที่ <span>ภาคภูมิใจ</span></h2>
           </div>
           <div class="filter-tabs fade-up" role="tablist" aria-label="Filter projects">
-            <button class="filter-btn active" data-filter="all"     role="tab" aria-selected="true">ทั้งหมด</button>
-            <button class="filter-btn"        data-filter="website" role="tab" aria-selected="false">เว็บไซต์</button>
-            <button class="filter-btn"        data-filter="chatbot" role="tab" aria-selected="false">LINE Chatbot</button>
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ทั้งหมด</button>
+            <button class="filter-btn" data-filter="website" role="tab" aria-selected="false">เว็บไซต์</button>
+            <button class="filter-btn" data-filter="chatbot" role="tab" aria-selected="false">LINE Chatbot</button>
+            <button class="filter-btn" data-filter="excel" role="tab" aria-selected="false">อื่นๆ</button>
           </div>
         </div>
         <!-- Cards rendered by main.js / renderProjects() -->
@@ -443,26 +488,37 @@
         <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="wg1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+              <stop offset="0%" stop-color="#4A90D9" />
+              <stop offset="50%" stop-color="#7B4FD1" />
+              <stop offset="100%" stop-color="#E91E8C" />
             </linearGradient>
           </defs>
-          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z" fill="url(#wg1)" fill-opacity="0.3"/>
+          <path d="M0,70 C160,28 320,112 480,70 C640,28 800,112 960,70 C1120,28 1280,112 1440,70 L1440,120 L0,120 Z"
+            fill="url(#wg1)" fill-opacity="0.3" />
         </svg>
         <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="wg2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+              <stop offset="0%" stop-color="#4A90D9" />
+              <stop offset="50%" stop-color="#7B4FD1" />
+              <stop offset="100%" stop-color="#E91E8C" />
             </linearGradient>
           </defs>
-          <path d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z" fill="url(#wg2)" fill-opacity="0.6"/>
+          <path
+            d="M0,48 C90,82 270,14 360,48 C450,82 630,14 720,48 C810,82 990,14 1080,48 C1170,82 1350,14 1440,48 L1440,85 L0,85 Z"
+            fill="url(#wg2)" fill-opacity="0.6" />
         </svg>
         <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="wg3" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#4A90D9"/><stop offset="50%" stop-color="#7B4FD1"/><stop offset="100%" stop-color="#E91E8C"/>
+              <stop offset="0%" stop-color="#4A90D9" />
+              <stop offset="50%" stop-color="#7B4FD1" />
+              <stop offset="100%" stop-color="#E91E8C" />
             </linearGradient>
           </defs>
-          <path d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z" fill="url(#wg3)"/>
+          <path
+            d="M0,35 C72,7 216,63 288,35 C360,7 504,63 576,35 C648,7 792,63 864,35 C936,7 1080,63 1152,35 C1224,7 1368,63 1440,35 L1440,60 L0,60 Z"
+            fill="url(#wg3)" />
         </svg>
       </div>
     </section>
@@ -503,9 +559,8 @@
           </div>
 
           <!-- LINE QR -->
-          <div class="contact-card" role="button" tabindex="0"
-               onclick="openQR()" onkeypress="if(event.key==='Enter')openQR()"
-               style="cursor:pointer" aria-label="สแกน QR Code LINE">
+          <div class="contact-card" role="button" tabindex="0" onclick="openQR()"
+            onkeypress="if(event.key==='Enter')openQR()" style="cursor:pointer" aria-label="สแกน QR Code LINE">
             <div class="contact-icon" aria-hidden="true">💚</div>
             <div class="contact-info">
               <div class="contact-label">LINE QR Code</div>
@@ -529,13 +584,18 @@
       <!-- Wave: Contact → Footer (3 layers) -->
       <div class="wave-divider" aria-hidden="true">
         <svg class="wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z" fill="#1A1A2E" fill-opacity="0.3"/>
+          <path d="M0,70 C160,112 320,28 480,70 C640,112 800,28 960,70 C1120,112 1280,28 1440,70 L1440,120 L0,120 Z"
+            fill="#1A1A2E" fill-opacity="0.3" />
         </svg>
         <svg class="wave-mid" viewBox="0 0 1440 85" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z" fill="#1A1A2E" fill-opacity="0.6"/>
+          <path
+            d="M0,48 C90,14 270,82 360,48 C450,14 630,82 720,48 C810,14 990,82 1080,48 C1170,14 1350,82 1440,48 L1440,85 L0,85 Z"
+            fill="#1A1A2E" fill-opacity="0.6" />
         </svg>
         <svg class="wave-front" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z" fill="#1A1A2E"/>
+          <path
+            d="M0,35 C72,63 216,7 288,35 C360,63 504,7 576,35 C648,63 792,7 864,35 C936,63 1080,7 1152,35 C1224,63 1368,7 1440,35 L1440,60 L0,60 Z"
+            fill="#1A1A2E" />
         </svg>
       </div>
     </section>
@@ -550,15 +610,15 @@
         <p class="footer-copy">© 2026 Krittaporn. All rights reserved.</p>
         <div class="footer-links">
           <a href="https://github.com" class="footer-link" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-          <a href="https://line.me"    class="footer-link" target="_blank" rel="noopener" aria-label="LINE">LINE</a>
+          <a href="https://line.me" class="footer-link" target="_blank" rel="noopener" aria-label="LINE">LINE</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ===================== PROJECT DETAIL MODAL ===================== -->
-  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true"
-       aria-labelledby="modal-title-text" aria-hidden="true">
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title-text"
+    aria-hidden="true">
     <div class="modal">
       <div class="modal-header">
         <div>
@@ -590,7 +650,8 @@
         <!-- Action buttons -->
         <div class="modal-actions">
           <!-- ปุ่มดูเว็บไซต์จริง: แสดงเฉพาะเมื่อ showLiveUrl: true ใน data.js -->
-          <a href="#" class="btn-modal-link" id="modal-link" target="_blank" rel="noopener noreferrer" style="display:none;">
+          <a href="#" class="btn-modal-link" id="modal-link" target="_blank" rel="noopener noreferrer"
+            style="display:none;">
             🔗 ดูเว็บไซต์จริง
           </a>
           <!-- ปุ่มติดต่อผม: แสดงเสมอ ลิงก์ไปหน้า contact -->
@@ -621,4 +682,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
