@@ -315,7 +315,7 @@ function copyLineId() {
     msg.classList.add('show');
     setTimeout(function() { msg.classList.remove('show'); }, 2000);
   }
-  var lineId = '@your-line-id';
+  var lineId = 'menmen@3258';
   if (navigator.clipboard) {
     navigator.clipboard.writeText(lineId).then(showMsg).catch(function() {
       fallbackCopy(lineId); showMsg();
