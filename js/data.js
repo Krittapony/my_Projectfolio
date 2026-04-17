@@ -72,7 +72,7 @@ var projects = [
     images: ["images/projects/Insurance_cal_1.jpg", "images/projects/Insurance_cal_2.jpg", "images/projects/Insurance_cal_3.jpg", "images/projects/Insurance_cal_4.jpg", "images/projects/Insurance_cal_5.jpg", "images/projects/Insurance_cal_6.jpg"],
     emoji: "📅",
     gradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
-    tags: ["Advanced Excel", "Provit table", "DATEDIF", "IF + MOD ซ้อนหลายชั้น","VLOOKUP + Composite Key (LEFT + &","MIN + DATE ซ้อน","VLOOKUP + ต่อ String","MOD + DATEDIF ซ้อน"],
+    tags: ["Advanced Excel", "Pivot table", "DATEDIF", "IF + MOD ซ้อนหลายชั้น","VLOOKUP + Composite Key","MIN + DATE ซ้อน","VLOOKUP + ต่อ String","MOD + DATEDIF ซ้อน"],
     showLiveUrl: false,
     liveUrl: "https://example.com",
     year: "2026"
