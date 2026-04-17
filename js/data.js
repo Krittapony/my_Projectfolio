@@ -83,12 +83,12 @@ var projects = [
     category: "website",
     description: "ระบบที่เข้ามาช่วยติดตามและตรวจสอบการขอใช้งบพัฒนาบุคลากรในองค์กร เพื่อให้การจัดการงบประมาณเป็นไปอย่างมีประสิทธิภาพและโปร่งใส",
     fullDescription: "ระบบตรวจสอบการขอใช้งบพัฒนาบุคลากรที่ช่วยให้ฝ่ายบุคคลและฝ่ายการเงินสามารถติดตามและตรวจสอบการขอใช้งบพัฒนาบุคลากรได้อย่างมีประสิทธิภาพ โดยระบบนี้จะช่วยให้ผู้จัดการสามารถอนุมัติหรือปฏิเสธคำขอใช้งบประมาณได้อย่างรวดเร็ว และยังสามารถดูประวัติการขอใช้งบประมาณของแต่ละบุคคลได้อีกด้วย นอกจากนี้ยังมีฟีเจอร์ในการสร้างรายงานสรุปการใช้งบประมาณเพื่อให้ฝ่ายบริหารสามารถวิเคราะห์และวางแผนงบประมาณในอนาคตได้อย่างมีประสิทธิภาพ",
-    images: [""],
+    images: ["images/projects/Cost_money_1.jpg", "images/projects/Cost_money_2.jpg", "images/projects/Cost_money_3.jpg", "images/projects/Cost_money_4.jpg", "images/projects/Cost_money_5.jpg", "images/projects/Cost_money_6.jpg", "images/projects/Cost_money_7.jpg", "images/projects/Cost_money_8.jpg", "images/projects/Cost_money_9.jpg", "images/projects/Cost_money_10.jpg"],
     emoji: "📅",
     gradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
     tags: ["Javascript", "Google API", "Google sheets", "Google app scripts","CSS","HTML"],
     showLiveUrl: true,
-    liveUrl: "https://script.google.com/macros/s/AKfycbxgBhJl0OYEMt4EyI-IU6BlYH-zHHsuYrLs7I63xZdC_p1uu4g98Bq-EDZ0tg4fD7z4/exec",
+    liveUrl: "https://script.google.com/macros/s/AKfycbzrrRkfGcdq-sEEpPu_5VqpIo7CNj0Jzgl4VvpYNW7JRwcMQ-7QpBaymTxWMcE0HhLR/exec",
     year: "2026"
   }
 ];
