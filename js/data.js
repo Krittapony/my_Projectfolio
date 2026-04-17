@@ -76,5 +76,19 @@ var projects = [
     showLiveUrl: false,
     liveUrl: "https://example.com",
     year: "2026"
+  },
+  {
+    id: 5,
+    title: "ระบบตรวจสอบการขอใช้งบพัฒนาบุคลากร",
+    category: "excel",
+    description: "ระบบที่เข้ามาช่วยติดตามและตรวจสอบการขอใช้งบพัฒนาบุคลากรในองค์กร เพื่อให้การจัดการงบประมาณเป็นไปอย่างมีประสิทธิภาพและโปร่งใส",
+    fullDescription: "ระบบตรวจสอบการขอใช้งบพัฒนาบุคลากรที่ช่วยให้ฝ่ายบุคคลและฝ่ายการเงินสามารถติดตามและตรวจสอบการขอใช้งบพัฒนาบุคลากรได้อย่างมีประสิทธิภาพ โดยระบบนี้จะช่วยให้ผู้จัดการสามารถอนุมัติหรือปฏิเสธคำขอใช้งบประมาณได้อย่างรวดเร็ว และยังสามารถดูประวัติการขอใช้งบประมาณของแต่ละบุคคลได้อีกด้วย นอกจากนี้ยังมีฟีเจอร์ในการสร้างรายงานสรุปการใช้งบประมาณเพื่อให้ฝ่ายบริหารสามารถวิเคราะห์และวางแผนงบประมาณในอนาคตได้อย่างมีประสิทธิภาพ",
+    images: ["images/projects/Insurance_cal_1.jpg"],
+    emoji: "📅",
+    gradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
+    tags: ["Javascript", "Google API", "Google sheets", "Google app scripts","CSS","HTML"],
+    showLiveUrl: true,
+    liveUrl: "https://script.google.com/macros/s/AKfycbxgBhJl0OYEMt4EyI-IU6BlYH-zHHsuYrLs7I63xZdC_p1uu4g98Bq-EDZ0tg4fD7z4/exec",
+    year: "2026"
   }
 ];
